@@ -4,7 +4,7 @@ import { BsSearch } from "react-icons/bs";
 const SearchInput = () => {
     return (
         <form className='flex items-center gap-2'>
-            <input type="text" placeholder='Search..' className='input input-bordered rounded-full' />
+            <input type="text" placeholder='Search..' className='input focus:outline-none input-bordered rounded-full' />
             <button type='submit' className='btn btn-circle bg-sky-500 text-white'>
                 <BsSearch className='w-5 h-5 outline-none' />
             </button>
