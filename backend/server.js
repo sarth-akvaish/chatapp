@@ -5,8 +5,8 @@ import authRoutes from './routes/auth.routes.js'
 import messageRoutes from './routes/message.routes.js'
 import userRoutes from './routes/user.routes.js'
 import connToDB from './db/conn.js';
+import { app, server } from './socket/socket.js'
 
-const app = express();
 const port = 5000 || process.env.port;
 dotenv.config();
 
@@ -23,7 +23,7 @@ app.use('/api/users', userRoutes);
 // })
 
 
-app.listen(port, () => {
+server.listen(port, () => {
     connToDB();
     console.log(`Server is running Get some chill !! PORT : ${port}`)
 })
