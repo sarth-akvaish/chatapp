@@ -30,6 +30,5 @@ app.get('*', (req, res) => {
 
 server.listen(port, () => {
     connToDB();
-    console.log(parentDir);
-    console.log(`Server is running Get some chill !! PORT : ${port}`)
+    console.log(`Server is running Get some chill !! on PORT : ${port}`)
 })
